@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./sass/main.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="card">
+        <h1>Todo App</h1>
+        <div class="add_div">
+          <input type="text" id="input" placeholder="Add Your New Todo" />
+          <button id="addBtn">
+            <svg style="top: 2px; position: relative" width="20" height="20" fill="#fff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <rect x="9" y="1" width="1" height="17"></rect>
+              <rect x="1" y="9" width="17" height="1"></rect>
+            </svg>
+          </button>
+        </div>
+
+        <div class="all-todos" id="todos"></div>
+        <div class="footer"><div>You Have <span id="count"></span> Pending Task</div>
+        <div class="dangerBtn" id="clearAllTodos">Clear All</div></div>
+        
+        
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
